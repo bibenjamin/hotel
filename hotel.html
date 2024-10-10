@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Szeleta</title>
+    <style>
+   :root {
+    --primary-color: #676665;
+    --secondary-color: #f4f3f1;
+    --text-color: #333;
+    --background-color: #a1a1a1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.hotel-info,
+.promo-box,
+.contact-info {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.hotelkep {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.program-offers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.program-item {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.program-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.testimonials {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.fizetesek {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.fizetesek img {
+    height: 30px;
+}
+
+.kozep {
+    text-align: center;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 1rem;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.nav-list a:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-list.show {
+        display: flex;
+    }
+    .nav-list li {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    .nav-list li:last-child {
+        margin-bottom: 0;
+    }
+    .feher{
+        background-color: white;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-list">
+                <li><a href="#fooldal">Főoldal</a></li>
+                <li><a href="#rolunk">Rólunk</a></li>
+                <li><a href="#szolgaltatasok">Szolgáltatások</a></li>
+                <li><a href="#latnivalok">Látnivalók</a></li>
+                <li><a href="#galeria">Galéria</a></li>
+                <li><a href="#arak">Árak</a></li>
+                <li><a href="#ajanlat">Ajánlat/Foglalás</a></li>
+                <li><a href="#eljutas">Eljutás</a></li>
+                <li><a href="#eng">ENG</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hotel-info">
+            <img src="https://lh6.googleusercontent.com/proxy/DAx30vqJWdR0BdFxpBCo90CgGRsIMAixWKJ8-XTZS2ofCGi0siqRgfJE4wNziQ24wG_GeXYsvg4GzyNpik360nuf6dEH973ng0RSkZUCeWH1lMhdtuiAWd9W157z4-B-YKiXmq_49kZkh2RzCa585UWbl6Injskel3nteg" class="hotelkep">
+            <h1>Hotel Szeleta</h1>
+            <p>Hotelünk a Bükki Nemzeti Park területén, Lillafüred közelében, Miskolc-Alsóhámortól található. A szálloda körbeveszi a Szeleta-barlang csodálatos, a Bükk friss levegője és az erdő. Igazi családi szállodaként és pihenőhelyként rendelkezünk, ahol játszótér várja a gyermekeket. Széchenyi Pihenő Kártyát is elfogadunk!</p>
+            <a href="#bovebben">Bővebben »</a>
+        </section>
+
+        <aside class="promo-box">
+            <h2>Ajándék Önnek!</h2>
+            <img src="https://cdn.britannica.com/83/195983-138-66807699/numbers-tiger-populations.jpg?w=800&h=450&c=crop" alt="Tiger" class="hotelkep">
+            <p>Állatkert belépők ajándékba: Foglaljon minimum négy éjszakát és térítésmentesen egy miskolci Állatkert belépőt adunk.</p>
+        </aside>
+    </main>
+
+    <section class="program-offers container">
+
+        <h2 class="kozep">Programajánló</h2>
+        <div class="program-item">
+            <img src="https://activekomplex.hu/uploads/activekomplex-1678779269_9041_1204x803.jpg" alt="Fürdőszoba">
+            <h3>14 fürdőszoba felújítva!</h3>
+            <p>A látványterv és a szoba dizájnja már megújult! A fürdőszobában 14...</p>
+        </div>
+        <div class="program-item">
+            <img src="https://helovelo.hu/wp-content/uploads/2019/01/helovelo-bike-kerekparok.jpg" alt="Kerékpárok">
+            <h3>Bővült a bérelhető kerékpárok száma!</h3>
+            <p>Hétfőn új kerékpár flottánk érkezett meg egy 400 millás tesztelés után...</p>
+        </div>
+        <div class="program-item">
+            <img src="https://cdn.myshoptet.com/usr/www.wilsondo.hu/user/shop/big/67827-6_hunt-taskarugos-matrac-90x200.jpg?637da3bd" alt="Matrac">
+            <h3>Új egészségügyi matracok!</h3>
+            <p>2024-re lecseréltük a matracainkat. Reméljük, hogy nem fog észrevenni...</p>
+        </div>
+        <div class="program-item">
+            <img src="https://szilveszter.hu/images/cikk/552/szilveszter(1)_5.jpg" alt="Szilveszter">
+            <h3>2024 Szilveszter</h3>
+            <p>Kedvezményes szállás lehetőségek...</p>
+        </div>
+    </section>
+
+    <section class="contact-info container">
+        <h2>Hotel Szeleta***</h2>
+        <p>Üzemelteti a Hámor Holiday Zrt.<br>
+        3517 Miskolc, Szeleta u. 12-14.</p>
+        <p>Telefon: +36 46/530 130<br>
+        Fax: +36 46/530 131<br>
+        E-mail: info@hotelszeleta.hu<br>
+        NTAK regisztrációs szám: SZ19000594</p>
+        <p>Szállodánk Miskolc és Lillafüred között Miskolc-Alsóhámor városrészben helyezkedik el. A barlang mintegy 200 m-re található hozzánk képest. Megközelíthető Miskolc belvárosából a Lillafüredi kisvasúttal és közúton, Miskolc belvárosán, Hámori-tó mellett elhaladva.</p>
+    </section>
+
+    <section class="testimonials container">
+        <h2>Vélemények - Hotel Szeleta</h2>
+        <blockquote>
+            <p>Nagyon is mondhatjuk 4*-osra szép és a hely! Tiszta környezet és Fantáziáló kövek. Lehet egy kérdes Személyzet kedves! Egy olyan élményt kaptunk! Ezt mindenkinek Ajánlom! Egy Plusz a Szauna, Amiben egy jártunk!</p>
+            <footer>- Mária Kovács-Ádel, Éva, Imre</footer>
+        </blockquote>
+        <blockquote>
+            <p>Köszönjük a Hotel Szeleta minden dolgozójának a kedvességet, figyelmességet és a sok mosolyt! Nagyon jól éreztük magunkat! Nyugodt, csendes környezet, tiszta, kényelmes szobák, a reggeli és a vacsora bőséges, ízletes! Ajánljuk mindenkinek, aki pihenésre, kikapcsolódásra vágyik! Reméljük még találkozunk! Csodálati élmény!</p>
+            <footer>- Johanne Szabó, Fekete Nikoletta</footer>
+        </blockquote>
+    </section>
+
+    <footer class="feher">
+        <div class="container">
+            <p style="color: #333;">&copy; 2024 www.hotelszeleta.hu</p>
+            <p style="color: #333;">Online tanácsadó: DUNDER.HU</p>
+            <div class="fizetesek">
+                <img src="https://www.visa.com.ua/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg" alt="Visa">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCUIV2S3bnC3kP2Y7k7HJ_xOWFmHtLRKtrHQ&s" alt="Visa Electron">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC7bBSu8M-bswMQ12nxrOw8TbPQeQ441IIfg&s" alt="Maestro">
+                <img src="https://www.investopedia.com/thmb/F8CKM3YkF1fmnRCU2g4knuK0eDY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MClogo-c823e495c5cf455c89ddfb0e17fc7978.jpg" alt="MasterCard">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwI7E9IdjDoMacdXRYZiTek6xt_Q4Q7fbSJg&s" alt="American Express">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_GGztjdSUvhZBfqs9TgNuC6POm4l4S2m2A&s" alt="Diners Club">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('.nav-list');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
